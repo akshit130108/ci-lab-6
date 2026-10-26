@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Build and Test 
 
 on: 
@@ -51,3 +52,25 @@ jobs:
       - name: Run tests 
 
         run: pytest 
+=======
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display the text file
+        run: cat message.txt
+
+      - name: Check file contains expected text
+        run: grep "Hello from CI/CD lab" message.txt
+>>>>>>> 735fbfd5740c2cef0d72360bd1ca1df6c9139319
