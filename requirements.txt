@@ -7,6 +7,6 @@ pytest
 # .gitignore 
 
 
-.pytest_cache/ 
+
 
 
