@@ -1,0 +1,13 @@
+# requirements.txt 
+
+pytest 
+
+  
+
+# .gitignore 
+
+__pycache__/ 
+
+.pytest_cache/ 
+
+.venv/ 
